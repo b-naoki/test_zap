@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZAPのテスト</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
-    <h1>ZAPのテストです。</h1>
-    <!-- ここにコンテンツを追加 -->
+    <div class="container">
+        <h1>ZAPのテストです。</h1>
+        <div class="button-container">
+            <button onclick="navigateTo('html/overview.html')">ZAPの概要</button>
+            <button onclick="navigateTo('html/usage.html')">ZAPの使い方</button>
+            <button onclick="navigateTo('html/precautions.html')">ZAPの注意事項</button>
+        </div>
+    </div>
 </body>
 </html>

@@ -9,12 +9,65 @@ body {
     height: 100vh;
 }
 
-.container {
+#login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure the login form is above other content */
+}
+
+#login-form {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
     text-align: center;
 }
 
+#login-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+#login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#login-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#login-form button:hover {
+    background-color: #45a049;
+}
+
+.container {
+    text-align: center;
+    display: none; /* Initially hidden until authenticated */
+}
+
 h1 {
-    font-size: 3em; /* タイトルを大きく */
+    font-size: 2.5em; /* Adjusted title size */
     margin-bottom: 30px;
 }
 
@@ -26,12 +79,12 @@ button {
     background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 20px 40px; /* ボタンを大きく */
+    padding: 15px 30px; /* Adjusted button size */
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1.5em; /* フォントサイズを大きく */
-    margin: 10px; /* ボタン間の間隔を広げる */
+    font-size: 1.2em; /* Adjusted font size */
+    margin: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
